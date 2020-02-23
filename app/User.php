@@ -50,7 +50,7 @@ class User extends Authenticatable
 
     /**
        * Su šia funkcija tikrinsiu ar autentifikuotas vartotojas turi konkrečią rolę;
-       * pvz.: useris turi role 'admin', 'owner' ir 'student' , tada jis galės pasiekti funkciją 'UsersController@index',
+       * pvz.: vartotojas turi role 'admin', 'owner' ir 'student' , tada jis galės pasiekti funkciją 'UsersController@index',
        * jeigu vartotojas turi tam role ($role):
        * grąžinama reikšmė yra true ir vartotojui leidžiama pasiekti duomenis,
        * jeigu vartotojas neturi tam roles ($role):

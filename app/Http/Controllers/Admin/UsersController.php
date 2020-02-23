@@ -15,11 +15,10 @@ class UsersController extends Controller
 
     /**
        * Index funckija grąžiną visus užsiregistravusius vartotojus.
-       * Visus užsiregistravusius vartotojus gali matyti varototjas tik su 'admin' role.
+       * Visus užsiregistravusius vartotojus gali matyti vartotojas tik su 'admin' role.
      */
     public function index()
     {
-        // dd();
         if (Gate::allows('manage-user')) {
           $users = User::all();
           $users->load('roles');
